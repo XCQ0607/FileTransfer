@@ -21,7 +21,7 @@ COPY packages/webrtc-im/package.json packages/webrtc-im/
 COPY packages/websocket/package.json packages/websocket/
 
 # 安装所有依赖
-RUN pnpm install --frozen-lockfile && \
+RUN pnpm install && \
     chmod -R 777 node_modules && \
     chmod -R 777 packages
 
