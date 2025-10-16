@@ -17,7 +17,7 @@ COPY packages/webrtc-im/package.json packages/webrtc-im/
 # COPY packages/websocket/package.json packages/websocket/
 
 # 安装所有依赖（--frozen-lockfile确保依赖版本一致）
-RUN pnpm install --frozen-lockfile
+RUN pnpm install
 
 # 复制完整项目代码
 COPY . .
